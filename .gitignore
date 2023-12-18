@@ -2,6 +2,7 @@
 package-lock.json
 .pytest_cache
 *.egg-info
+ETM-1916.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,1 +1,13 @@
 pytest==6.2.5
+
+
+# the has_resource_properties function helper is used when you only care that a resource of
+# a particular type exists (regardless of its logical identfier), and that some properties
+# are set to specific values.
+# Example:
+# template.has_resource_properties("AWS::CertificateManager::Certificate", {
+#     "DomainName": "test.example.com",
+#     "ShouldNotExist": Match.absent(),
+# })
+# Match.absent() can be used to assert that a particular key in an object is not set (or
+# set to undefined).
